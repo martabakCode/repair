@@ -1,0 +1,14 @@
+.sidebar-dark-primary {
+    background-color: #dc3545; /* Red background color */
+    color: white; /* Text color */
+}
+
+.sidebar-dark-primary .nav-link {
+    color: white !important; /* Change text color of navigation links */
+}
+
+.sidebar-dark-primary .nav-link:hover,
+.sidebar-dark-primary .nav-link.active {
+    background-color: #c82333 !important; /* Darker red for active and hover states */
+    color: white !important; /* Text color on hover or active */
+}
