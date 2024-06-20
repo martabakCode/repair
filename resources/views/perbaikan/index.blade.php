@@ -48,7 +48,7 @@
                             @endif
                         </td>
                         <td>
-                            <a class="btn btn-info btn-sm" data-toggle="modal" data-target="#keteranganModal{{ $perbaikan->id_perbaikan }}">Keterangan</a>
+                            <a class="btn btn-info btn-sm" data-toggle="modal" data-target="#keteranganModal{{ $perbaikan->id_perbaikan }}">Lihat</a>
                         </td>
                     </tr>
                     <!-- Mulai Modal -->
