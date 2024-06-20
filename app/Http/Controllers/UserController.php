@@ -24,6 +24,7 @@ class UserController extends Controller
     {
         // Validate the request
         $request->validate([
+            'id_user' => 'required|unique:user',
             'nama_user' => 'required|string|max:255',
             'password' => 'required|string|min:8',
             'id_divisi' => 'required|string|max:10',
@@ -58,6 +59,7 @@ class UserController extends Controller
 
         // Validate the request
         $request->validate([
+            'id_user' => 'unique:user',
             'nama_user' => 'required|string|max:255',
             'password' => 'nullable|string|min:8',
             'id_divisi' => 'required|string|max:10',

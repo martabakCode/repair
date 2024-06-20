@@ -18,13 +18,13 @@
     <form action="{{ route('login') }}" method="post">
         @csrf
         <div class="input-group mb-3">
-            <input type="text" class="form-control @error('nama_user') is-invalid @enderror" name="nama_user" placeholder="User Name" value="{{ old('nama_user') }}" required>
+            <input type="text" class="form-control @error('id_user') is-invalid @enderror" name="id_user" placeholder="User ID" value="{{ old('id_user') }}" required>
             <div class="input-group-append">
                 <div class="input-group-text">
                     <span class="fas fa-user"></span>
                 </div>
             </div>
-            @error('nama_user')
+            @error('id_user')
                 <span class="invalid-feedback" role="alert">
                     <strong>{{ $message }}</strong>
                 </span>

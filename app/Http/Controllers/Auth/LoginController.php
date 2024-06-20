@@ -17,12 +17,12 @@ class LoginController extends Controller
     {
         // Validate the form data
         $request->validate([
-            'nama_user' => 'required|string',
+            'id_user' => 'required|string',
             'password' => 'required|string',
         ]);
 
         // Get the form data
-        $credentials = $request->only('nama_user', 'password');
+        $credentials = $request->only('id_user', 'password');
 
         // Attempt to log the user in
         if (Auth::attempt($credentials, $request->filled('remember'))) {
